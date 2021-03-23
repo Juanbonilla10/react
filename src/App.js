@@ -185,7 +185,7 @@ function App() {
               </Grid>
               <Grid item xs={2} className={classes.margenes}>
                 <Paper className={classes.paper}>
-                  <Button variant="outlined" color="">
+                  <Button variant="outlined" color="secundary">
                     =
                   </Button>
 
