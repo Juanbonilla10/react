@@ -48,7 +48,7 @@ function App() {
                 <Paper className={classes.paper}>
 
                   <form className={classes.root} noValidate autoComplete="off">
-                    <TextField id="outlined-basic" fullWidth label="Ingrese un valor" className={classes.textGrande} variant="outlined" />
+                    <TextField id="outlined-basic" fullWidth label="Hola mundo" className={classes.textGrande} variant="outlined" />
                   </form>
                 </Paper>
               </Grid>
