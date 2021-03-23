@@ -21,11 +21,17 @@ const useStyles = makeStyles((theme) => ({
 
   altura: {
     paddingTop: 80,
-    textGrande:{
-      fontSize:80,
+    textGrande: {
+      fontSize: 80,
     }
-  }
+  },
+  margenes:{
+    marginLeft: 50,
+  },
+
+
 }));
+
 
 function App() {
   const classes = useStyles();
@@ -44,20 +50,16 @@ function App() {
                   <form className={classes.root} noValidate autoComplete="off">
                     <TextField id="outlined-basic" fullWidth label="Ingrese un valor" className={classes.textGrande} variant="outlined" />
                   </form>
-
-
                 </Paper>
               </Grid>
-              <Grid item xs={2}>
-              </Grid>
-              <Grid item xs={2}>
+              <Grid item xs={2} className={classes.margenes}>
                 <Paper className={classes.paper}>
                   <Button variant="outlined" color="secundary">
                     AC
                   </Button>
                 </Paper>
               </Grid>
-              <Grid item xs={2}>
+              <Grid item xs={2} className={classes.margenes}>
                 <Paper className={classes.paper}>
                   <Button variant="outlined" color="">
                     CE
@@ -65,7 +67,7 @@ function App() {
 
                 </Paper>
               </Grid>
-              <Grid item xs={2}>
+              <Grid item xs={2} className={classes.margenes}>
                 <Paper className={classes.paper}>
                   <Button variant="outlined" color="primary">
                     %
@@ -73,24 +75,28 @@ function App() {
 
                 </Paper>
               </Grid>
-              <Grid item xs={2}>
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="primary">
+                    /
+                  </Button>
+                </Paper>
               </Grid>
-
-              <Grid item xs={2}>
+              <Grid item xs={2} className={classes.margenes}>
                 <Paper className={classes.paper}>
                   <Button variant="outlined" color="secundary">
                     7
                   </Button>
                 </Paper>
               </Grid>
-              <Grid item xs={2}>
+              <Grid item xs={2} className={classes.margenes}>
                 <Paper className={classes.paper}>
                   <Button variant="outlined" color="secundary">
                     8
                   </Button>
                 </Paper>
               </Grid>
-              <Grid item xs={2}>
+              <Grid item xs={2} className={classes.margenes}>
                 <Paper className={classes.paper}>
                   <Button variant="outlined" color="">
                     9
@@ -98,7 +104,7 @@ function App() {
 
                 </Paper>
               </Grid>
-              <Grid item xs={2}>
+              <Grid item xs={2} className={classes.margenes}>
                 <Paper className={classes.paper}>
                   <Button variant="outlined" color="primary">
                     *
@@ -106,21 +112,91 @@ function App() {
 
                 </Paper>
               </Grid>
-              <Grid item xs={2}>
+              <Grid item xs={2} className={classes.margenes}>
                 <Paper className={classes.paper}>
-
-                  <Button variant="outlined" color="primary">
-                    /
+                  <Button variant="outlined" color="secundary">
+                    4
                   </Button>
                 </Paper>
               </Grid>
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="secundary">
+                    5
+                  </Button>
+                </Paper>
+              </Grid>
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="">
+                    6
+                  </Button>
 
+                </Paper>
+              </Grid>
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="primary">
+                    -
+                  </Button>
 
+                </Paper>
+              </Grid>
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="secundary">
+                    1
+                  </Button>
+                </Paper>
+              </Grid>
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="secundary">
+                    2
+                  </Button>
+                </Paper>
+              </Grid>
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="">
+                    3
+                  </Button>
 
+                </Paper>
+              </Grid>              
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="primary" className={classes.margen}>+</Button>
+                </Paper>
+              </Grid>  
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="secundary">
+                    0
+                  </Button>
+                </Paper>
+              </Grid>
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="secundary">
+                    .
+                  </Button>
+                </Paper>
+              </Grid>
+              <Grid item xs={2} className={classes.margenes}>
+                <Paper className={classes.paper}>
+                  <Button variant="outlined" color="">
+                    =
+                  </Button>
 
+                </Paper>
+              </Grid>
 
             </Grid>
           </div>
+
+
+
         </Typography>
 
       </Container>
