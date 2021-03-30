@@ -18,13 +18,9 @@ function Ejemplo(){
     const classes = useStyles();
     const [ventana,setClics] = useState(0);
 
-  /*useEffect(()=>{
+    /*useEffect(()=>{
     document.title = `Cantidad de clics ${clics}`;
-    })*/
-
-
-   
-
+    })  */
     return(
         <Container fixed>
            
