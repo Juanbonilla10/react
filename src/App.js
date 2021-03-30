@@ -107,7 +107,7 @@ function ejecucionEntrada(primerNumeroIngresado){
 
   return (
     <Container maxWidth="sm" className="contorno">     
-      <Calcular nombresito="Ingrese un valor " valor={valorResultado}/>
+      <Calcular nombresito="Ingrese un valor" valor={valorResultado}/>
       <br></br>
       <div className={classes.root}>
         <Grid container spacing={1}>
