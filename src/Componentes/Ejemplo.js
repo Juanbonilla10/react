@@ -20,11 +20,7 @@ function Ejemplo(){
 
     /*useEffect(()=>{
     document.title = `Cantidad de clics ${clics}`;
-    })*/
-
-
-   
-
+    })  */
     return(
         <Container fixed>
            
