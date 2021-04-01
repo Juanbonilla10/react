@@ -1,14 +1,10 @@
 import React,{useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+
 import Grid from '@material-ui/core/Grid';
 import Container from  '@material-ui/core/Container';
-import TextField from '@material-ui/core/TextField';
-import Input from '@material-ui/core/Input';
-import Calculadora from './Componentes/Calculadora';
 
 import "./index.css";
-import "./Componentes/Operaciones";
 import Calcular from './Componentes/Calculadora';
 
 
@@ -66,35 +62,34 @@ function restar(primeraValorRestar,segundoValorRestado){
 
 function ejecucionEntrada(primerNumeroIngresado){
 
-  if(primerNumeroIngresado.target.name=='/'){
-    if(valorParaDivision!="1"){
+  if(primerNumeroIngresado.target.name==='/'){
+    if(valorParaDivision!=="1"){
       dividir(valorIngresado,valorParaDivision);  
       setClics("0");
     }else{
       setValorDivision(valorIngresado);
       setClics("0");
     }  
-  }else if(primerNumeroIngresado.target.name=='+'){ 
+  }else if(primerNumeroIngresado.target.name==='+'){ 
     sumar(valorIngresado,valorResultado);
     setClics("0");
-  }else if(primerNumeroIngresado.target.name=='-'){
-    if(valorResultado!='0'){
+  }else if(primerNumeroIngresado.target.name==='-'){
+    if(valorResultado!=='0'){
       restar(valorIngresado,valorResultado);
       setClics("0");
     }else{
       valorResultado(valorIngresado);
       setClics("0");
     }
-
   }
-  else if (primerNumeroIngresado.target.name=='*'){
+  else if (primerNumeroIngresado.target.name ==='*'){
     multiplicar(valorIngresado,valorParaMultiplicar)
-  }else if(primerNumeroIngresado.target.name=='CE'){
+  }else if(primerNumeroIngresado.target.name==='CE'){
     setClics(valorIngresado.slice(0, -1));
-  }else if(primerNumeroIngresado.target.name=='C'){
+  }else if(primerNumeroIngresado.target.name==='C'){
     setValorResultado("0");
     setClics("0");
-  }else if(primerNumeroIngresado.target.name=='%'){
+  }else if(primerNumeroIngresado.target.name==='%'){
     setClics(primerNumeroIngresado.target.name);
   }else{
     setClics(valorIngresado.concat(primerNumeroIngresado.target.name));
